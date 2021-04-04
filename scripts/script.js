@@ -30,7 +30,7 @@ function calculaChurrascometro(){
 
 
     let resultado = document.getElementById("resultado");
-    resultado.innerHTML = `<p> ${carne} grms de carne para o seu churrasco!!! </p>`
-    resultado.innerHTML += `<p> ${cerveja} mls de cerveja para o seu churrasco!!! </p>`
-    resultado.innerHTML += `<p> ${refrigerante} mls de Refrigerante/Água para o seu churrasco!!! </p>`
+    resultado.innerHTML = `<p> ${carne / 1000} Kilos de carne para o seu churrasco!!! </p>`
+    resultado.innerHTML += `<p> ${Math.ceil(cerveja /355)} Latas de cerveja </p>`
+    resultado.innerHTML += `<p> ${Math.ceil(refrigerante / 2000)} Litros de Refrigerante ou Água. </p>`
 }
